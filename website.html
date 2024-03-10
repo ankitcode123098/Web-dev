@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistical Calculator</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header class="head1">
+  <p class="write">STATISTICAL CALCULATOR</p>
+</header>
+<div class="text">
+  This Statistical Calculator allows you to perform multiple Statistical operations.
+</div>
+<div class="container">
+  <div class="space">Provide the values separated by a single comma</div>
+  <label for="dataset_size" class="label">Enter the size of dataset:</label>
+  <input type="number" id="dataset_size" class="input2" placeholder="Enter the size"><br>
+  <label for="data_points" class="label">Enter the datapoints:</label>
+  <input type="text" id="data_points" class="input1" placeholder="Enter datapoints"><br>
+  <p class="isa">For Regression enter the data here:-</p>
+  <label class="label">Datapoints X: </label>
+  <input type="text" id="dataset1" class="data1"><br>
+  <label class="label">Datapoints Y: </label>
+  <input type="text" id="dataset2" class="data2">
+</div>
+<div class="buttons">
+  <button onclick="calculateMean()" class="mean" id="meanid">Calculate Mean</button>
+  <button onclick="calculateMedian()" class="median">Calculate Median</button>
+  <button onclick="calculateMode()" class="mode">Calculate Mode</button>
+  <button onclick="calculateSD()" class="sd">Calculate Standard Deviation</button>
+  <button onclick="calculateVariance()" class="variance">Calculate Variance</button>
+  <button onclick="calculateRegression()" class="regression">Calculate Regression</button>
+</div>
+<label for="answer" class="result">Result</label>
+<input type="text" id="inputid" class="resultinput" disabled>
+
+<script src="script.js"></script>
+
+</body>
+</html>
