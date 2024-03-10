@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistical Calculator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+.head1 {
+  background-color: rgb(43, 15, 15);
+  color: white;
+  height: 100px;
+  border: 2px solid rgb(143, 125, 125);
+}
+.write {
+  padding: 1px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.text {
+    margin-top: 20px;
+    color: rgb(240, 238, 235);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+}
+.space {
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 20px;
+    font-size: larger;
+}
+.input1 {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.input2 {
+    margin-top: 20px;
+    width: 190px;
+}
+.label {
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container {
+    border: 1.2px solid whitesmoke;
+    margin-top: 10px;
+    padding: 10px;
+    width: fit-content;
+    font-size: x-large;
+    box-shadow: 3px 4px 2px rgb(148, 114, 114);
+    align-items: center;
+}
+input[type="text"] {
+    width: 300px;
+    height: 30px;
+}
+input[type="number"] {
+    width: 150px;
+    height: 20px;
+}
+.submit {
+    width: 200px;
+    height: 30px;
+    font-style: normal;
+    border-radius: 500px;
+    transition: background-color 0.3s ease;
+}
+.submit:hover {
+    background-color: rgb(46, 33, 33);
+    color: white;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.buttons button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+.buttons button:hover {
+    background-color: rgb(61, 61, 199);
+    border-radius: 5px;
+    transition-timing-function: ease-in;
+}
+.resultinput {
+    margin-top: 10px;
+    width: 1500px; /* Adjusted width */
+    margin-left: 10px;
+    font-palette: rgb(3, 3, 3);
+    background-color: beige;
+}
+.result {
+    color: white;
+    font-size: larger;
+    font-weight: 400;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.isa{
+    color:white;
+}
+.data1 , .data2{
+    margin: 10px;
+}
+</style>
+</head>
+<body>
+<header class="head1">
+  <p class="write">STATISTICAL CALCULATOR</p>
+</header>
+<div class="text">
+  This Statistical Calculator allows you to perform multiple Statistical operations.
+</div>
+<div class="container">
+  <div class="space">Provide the values separated by a single comma</div>
+  <label for="dataset_size" class="label">Enter the size of dataset:</label>
+  <input type="number" id="dataset_size" class="input2" placeholder="Enter the size"><br>
+  <label for="data_points" class="label">Enter the datapoints:</label>
+  <input type="text" id="data_points" class="input1" placeholder="Enter datapoints"><br>
+  <p class="isa">For Regression enter the data here:-</p>
+  <label class="label">Datapoints X: </label>
+  <input type="text" id="dataset1" class="data1"><br>
+  <label class="label">Datapoints Y: </label>
+  <input type="text" id="dataset2" class="data2">
+</div>
+<div class="buttons">
+  <button onclick="calculateMean()" class="mean" id="meanid">Calculate Mean</button>
+  <button onclick="calculateMedian()" class="median">Calculate Median</button>
+  <button onclick="calculateMode()" class="mode">Calculate Mode</button>
+  <button onclick="calculateSD()" class="sd">Calculate Standard Deviation</button>
+  <button onclick="calculateVariance()" class="variance">Calculate Variance</button>
+  <button onclick="calculateRegression()" class="regression">Calculate Regression</button>
+</div>
+<label for="answer" class="result">Result</label>
+<input type="text" id="inputid" class="resultinput" disabled>
+
+<script>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+</script>
+
+</body>
+</html>
